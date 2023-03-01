@@ -28,16 +28,12 @@ def control_column(k,j) :
             return False
 
     return True
-
 def control_row(k,j):
+   for i in range (0,9):
+      if k== s[j][i]:
+         return False
 
-    for i in range (0,9):
-
-        if k== s[j][i]:
-
-            return False
-
-    return True
+   return True
 def control_tab(k,i,j):
     if i<3:
         tr=0
